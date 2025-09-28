@@ -222,6 +222,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: auto;
   width: screen;
   background-color: rgb(14, 14, 14);
@@ -238,21 +239,36 @@
   color: rgb(0, 255, 0);
 }
 
-#certificate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65vw;
-  height: auto;
-  background-color: rebeccapurple;
-}
-
 .slider-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 65vw;
   position: relative;
+}
+
+#project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(24, 24, 24);
+  width: 75vw;
+  height: auto;
+  margin: 10px;
+}
+
+#project-title {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+}
+
+#project-title h1 {
+  margin-left: auto;
+}
+
+#project-title h1 span {
+  color: rgb(0, 255, 0);
 }
 
 @keyframes fade-in {

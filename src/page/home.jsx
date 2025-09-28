@@ -181,6 +181,13 @@ function Home() {
                 <Certification items={myCertificates} />
               </div>
             </div>
+            <div id="project-container">
+              <div id="project-title">
+                <h1>
+                  My Projects<span>!</span>
+                </h1>
+              </div>
+            </div>
           </div>
         </section>
       </div>

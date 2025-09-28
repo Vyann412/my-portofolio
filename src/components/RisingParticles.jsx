@@ -5,7 +5,7 @@ function RisingParticle() {
   const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-    const generated = Array.from({ length: 25 }).map(() => ({
+    const generated = Array.from({ length: 10 }).map(() => ({
       left: Math.random() * 100,
       delay: 1 + Math.random() * 3,
       size: 2 + Math.random() * 6,
