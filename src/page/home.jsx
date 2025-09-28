@@ -5,6 +5,7 @@ import Menu from "../components/Menu.jsx";
 import "../page/home.css";
 import RisingParticle from "../components/RisingParticles.jsx";
 import AboutMe from "../components/AboutMe.jsx";
+import Certification from "../components/Certification.jsx";
 
 function Home() {
   const myRoles = [
@@ -12,6 +13,31 @@ function Home() {
     "a Computer Science Major",
     "Learning Software Engineering",
     "Learning Mobile Programming",
+  ];
+
+  const myCertificates = [
+    {
+      img: new URL("../assets/samsungLogic.jpg", import.meta.url).href,
+      description: "Passsing the Logic Test For Samsung Innovation Campus",
+    },
+    {
+      img: new URL("../assets/samsung1.jpg", import.meta.url).href,
+      description: "Participant for Stage 1 at Samsung Innovation Campus",
+    },
+    {
+      img: new URL("../assets/agile1.jpg", import.meta.url).href,
+      description:
+        "Passing Agile Methods for Software Development Online Course",
+    },
+    {
+      img: new URL("../assets/agile3.jpg", import.meta.url).href,
+      description:
+        "Passing Project Management With Agile Scrum Method Online Course",
+    },
+    {
+      img: new URL("../assets/agile2.jpg", import.meta.url).href,
+      description: "Passing Project Management With Agile Method Online Course",
+    },
   ];
 
   const [count, setCount] = useState(0);
@@ -146,7 +172,16 @@ function Home() {
         </section>
 
         <section id="Projects" ref={projectsRef}>
-          <div id="my-project-container"></div>
+          <div id="my-project-container">
+            <div id="certificate-container">
+              <h1>
+                My Certificate<span>!</span>
+              </h1>
+              <div className="slider-container">
+                <Certification items={myCertificates} />
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>

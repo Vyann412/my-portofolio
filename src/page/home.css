@@ -51,13 +51,6 @@
   text-shadow: 0 0 8px rgb(0, 255, 0), 0 0 16px rgb(0, 255, 0);
 }
 
-#my-project-container {
-  display: flex;
-  height: 1500px;
-  width: screen;
-  background-color: transparent;
-}
-
 #about-me-frame {
   display: flex;
   position: absolute;
@@ -223,6 +216,43 @@
 
 .experience-card li:hover {
   color: rgb(0, 255, 0);
+}
+
+#my-project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: screen;
+  background-color: rgb(14, 14, 14);
+}
+
+#certificate-container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height: auto;
+}
+
+#certificate-container span {
+  color: rgb(0, 255, 0);
+}
+
+#certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  height: auto;
+  background-color: rebeccapurple;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  position: relative;
 }
 
 @keyframes fade-in {
