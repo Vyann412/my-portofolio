@@ -251,6 +251,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgb(24, 24, 24);
   width: 75vw;
   height: auto;

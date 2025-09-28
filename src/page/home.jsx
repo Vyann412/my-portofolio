@@ -6,6 +6,7 @@ import "../page/home.css";
 import RisingParticle from "../components/RisingParticles.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Certification from "../components/Certification.jsx";
+import Projects from "../components/Projects.jsx";
 
 function Home() {
   const myRoles = [
@@ -37,6 +38,23 @@ function Home() {
     {
       img: new URL("../assets/agile2.jpg", import.meta.url).href,
       description: "Passing Project Management With Agile Method Online Course",
+    },
+  ];
+
+  const myProjects = [
+    {
+      img: new URL("../assets/NextStepHome.png", import.meta.url).href,
+      title: "NextStep",
+      description:
+        "Software Engineering project for students who are looking for scholarships and internships",
+      role: "Made UI/UX and coded the frontend for scholars page and interns page",
+    },
+    {
+      img: new URL("../assets/NextStepHome.png", import.meta.url).href,
+      title: "NextStep",
+      description:
+        "Software Engineering project for students who are looking for scholarships and internships",
+      role: "Made UI/UX and coded the frontend for scholars page and interns page",
     },
   ];
 
@@ -187,6 +205,7 @@ function Home() {
                   My Projects<span>!</span>
                 </h1>
               </div>
+              <Projects project={myProjects} />
             </div>
           </div>
         </section>
