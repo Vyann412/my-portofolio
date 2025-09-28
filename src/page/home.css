@@ -1,0 +1,235 @@
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  animation: fade-in 1s ease 0.5s forwards;
+  z-index: 10;
+}
+
+#about-me-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 85vw;
+  /* background-color: gray; */
+  /* border: 2px solid rgb(165, 165, 165);
+  border-radius: 5px; */
+  padding: 0;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  width: 25vh;
+  height: 10vh;
+  margin: 0;
+}
+
+#title span:nth-child(1) {
+  margin-right: 5px;
+}
+
+#title span:nth-child(2) {
+  margin-left: 5px;
+  color: rgb(0, 255, 0);
+  text-shadow: 0 0 8px rgb(0, 196, 0), 0 0 16px rgb(0, 196, 0);
+}
+
+#title span:nth-child(3) {
+  color: rgb(0, 255, 0);
+  text-shadow: 0 0 8px rgb(0, 255, 0), 0 0 16px rgb(0, 255, 0);
+}
+
+#my-project-container {
+  display: flex;
+  height: 1500px;
+  width: screen;
+  background-color: transparent;
+}
+
+#about-me-frame {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin: 1vh;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  width: 80%;
+  height: 80%;
+  border: 0.1vh solid rgb(255, 255, 255);
+  /* border-bottom: 0; */
+  /* border-radius: 1vh; */
+  /* border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; */
+  /* background-color: black; */
+}
+
+#about-me-content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 40%;
+}
+
+#skill-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  position: relative;
+  margin: 5px;
+  /* background-color: rgb(24, 24, 24); */
+  /* background-color: red; */
+  border-radius: 0.5vh;
+  width: 90vw;
+  height: 1150px;
+}
+
+#skill-menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5%;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+#skill-menu-title h1 {
+  font-size: 30px;
+  color: rgb(2, 0, 7);
+}
+
+#app-tools {
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#app-tools span {
+  color: rgb(0, 255, 0);
+}
+
+#vite-and-react {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+  text-align: center;
+}
+
+#vite-and-react h1 {
+  margin: 0;
+}
+
+#vite-and-react div {
+  background-color: rgb(14, 14, 14);
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.read-the-docs {
+  margin: 50px;
+}
+
+#experience {
+  display: flex;
+  position: relative;
+  width: 80vw;
+  background-color: rgb(24, 24, 24);
+  height: 100%;
+  border-radius: 1vh;
+}
+
+#experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 5%;
+}
+
+#experience-container h1 {
+  color: rgb(255, 255, 255);
+}
+
+#experience-container h1 span {
+  color: rgb(0, 255, 0);
+}
+
+#experiences {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  background-color: transparent;
+  flex-wrap: wrap;
+  padding: 0;
+  /* margin-bottom: 20px; */
+}
+
+.experience-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: rgb(14, 14, 14);
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin: 5px;
+}
+
+.experience-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+}
+
+.experience-card h2 span {
+  color: rgb(0, 255, 0);
+}
+
+.experience-card ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: rgb(220, 220, 220);
+  font-size: 0.8vw;
+  line-height: 1.6;
+}
+
+.experience-card li {
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.experience-card li:hover {
+  color: rgb(0, 255, 0);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

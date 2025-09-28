@@ -1,0 +1,78 @@
+#welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 0.5s 4s forwards;
+  height: 100vh;
+}
+
+#welcome-text {
+  padding-right: 5px;
+  overflow: hidden;
+  animation: text-effect 0.5s steps(8, end) forwards,
+    floaty 3s 0.7s linear infinite;
+}
+
+#cursor {
+  width: 2px;
+  height: 45px;
+  background-color: white;
+  animation: blink 0.6s step-end infinite, fadeOut 0.2s 0.7s forwards;
+}
+
+@keyframes text-effect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes floaty {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(1px, -2px);
+  }
+  20% {
+    transform: translate(2px, -5px);
+  }
+  30% {
+    transform: translate(1px, -3px);
+  }
+  40% {
+    transform: translate(-2px, 4px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(3px, -1px);
+  }
+  70% {
+    transform: translate(2px, -3px);
+  }
+  80% {
+    transform: translate(-3px, -2px);
+  }
+  90% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
