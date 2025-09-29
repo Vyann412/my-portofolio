@@ -51,13 +51,6 @@
   text-shadow: 0 0 8px rgb(0, 255, 0), 0 0 16px rgb(0, 255, 0);
 }
 
-#my-project-container {
-  display: flex;
-  height: 1500px;
-  width: screen;
-  background-color: transparent;
-}
-
 #about-me-frame {
   display: flex;
   position: absolute;
@@ -222,6 +215,60 @@
 }
 
 .experience-card li:hover {
+  color: rgb(0, 255, 0);
+}
+
+#my-project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: screen;
+  background-color: rgb(14, 14, 14);
+}
+
+#certificate-container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height: auto;
+}
+
+#certificate-container span {
+  color: rgb(0, 255, 0);
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  position: relative;
+}
+
+#project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(24, 24, 24);
+  width: 75vw;
+  height: auto;
+  margin: 10px;
+}
+
+#project-title {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+}
+
+#project-title h1 {
+  margin-left: auto;
+}
+
+#project-title h1 span {
   color: rgb(0, 255, 0);
 }
 
